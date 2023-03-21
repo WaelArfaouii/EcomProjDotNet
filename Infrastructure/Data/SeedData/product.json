@@ -1,0 +1,15 @@
+[{   "Id" :1 ,
+    "name": "Angular Purple Boots",
+    "description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "price": 150,
+    "imageUrl": "images/products/boot-ang2.png",
+    "oroductTypeId": 3,
+    "productBrandId": 1
+  },{   "Id" :2 ,
+  "name": "Angular Purple Boots",
+  "description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+  "price": 150,
+  "imageUrl": "images/products/boot-ang2.png",
+  "oroductTypeId": 3,
+  "productBrandId": 1
+}]
