@@ -1,5 +1,5 @@
 using Infrastructure.Data;
-using EcomDotNet.Entities;
+using EcomDotNet.Entities.Product;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;

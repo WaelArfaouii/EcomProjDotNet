@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
 
-namespace EcomDotNet.Entities
+namespace EcomDotNet.Entities.Product
 {
     public class Product:BaseEntity
     {

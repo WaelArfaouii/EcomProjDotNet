@@ -1,6 +1,8 @@
-namespace EcomDotNet.Entities
+using Core.Entities;
+
+namespace EcomDotNet.Entities.Product
 {
-    public class ProductType
-    {
+    public class ProductType:BaseEntity
+    {   
     }
 }
