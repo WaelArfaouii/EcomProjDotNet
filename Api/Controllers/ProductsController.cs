@@ -2,9 +2,9 @@ using Infrastructure.Data;
 using EcomDotNet.Entities.Product;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Core.Interfaces;
+using Infrastructure.Data.Repositories.IRepositories;
 
-namespace EcomDotNet.Controllers
+namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

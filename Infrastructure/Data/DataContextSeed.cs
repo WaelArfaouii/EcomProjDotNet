@@ -41,7 +41,7 @@ namespace Infrastructure.Data
                     await context.SaveChangesAsync();
                 }
 
-                if (!context.Products.Any())
+               if (!context.Products.Any())
                 {
                     var productsData = File.ReadAllText("C:/Users/hp/OneDrive/dotNetProj/Infrastructure/Data/SeedData/products.json");
                     var products = JsonSerializer.Deserialize<List<Product>>(productsData);
@@ -60,7 +60,7 @@ namespace Infrastructure.Data
             {
                 var logger = loggerFactory.CreateLogger<DataContextSeed>();
                 logger.LogError(ex.Message);
-            }
+            } 
         }
     }
 }
