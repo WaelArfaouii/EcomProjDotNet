@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/products/types")]
     public class ProductTypeController : ControllerBase
     {   
         private readonly IProductTypeRepository _repo ;
