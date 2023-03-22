@@ -16,12 +16,19 @@ namespace Infrastructure.Data.Repositories.Impl
 
         async Task<Product> IProductRepository.getProductByIdAsync(long id)
         {
-            return await _context.Products.FindAsync(id) ;
+            return await _context.Products
+                .Include(p => p.productBrand)
+                .Include(p => p.productType)
+                .SingleOrDefaultAsync(p => p.Id == id);
+
         }
 
         async Task<IReadOnlyList<Product>> IProductRepository.getProductsAsync()
         {
-            var products =await  _context.Products.ToListAsync() ;
+            var products =await  _context.Products
+                .Include(p=> p.productBrand)
+                .Include(p=> p.productType)
+                .ToListAsync() ;
             return products ;
         }
     }

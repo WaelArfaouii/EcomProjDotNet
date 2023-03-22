@@ -1,6 +1,9 @@
-﻿namespace Infrastructure.Data.Repositories.IRepositories;
+﻿using EcomDotNet.Entities.Product;
 
-public class IProductBrandRepository
+namespace Infrastructure.Data.Repositories.IRepositories;
+
+public interface IProductBrandRepository
 {
-    
+    Task<ProductBrand> getProductBrandById(long id);
+    Task<IReadOnlyList<ProductBrand>> getProductBrands();
 }
