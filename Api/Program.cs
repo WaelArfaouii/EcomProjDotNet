@@ -19,7 +19,7 @@ internal class Program
         builder.Services.AddScoped<IProductRepository, ProductRepository>();
         builder.Services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
         builder.Services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
-
+        builder.Services.AddScoped<IProductBrandRepository, ProductBrandRepository>();
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddDbContext<DataContext>(options =>
